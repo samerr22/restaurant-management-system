@@ -5,17 +5,6 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Table from 'react-bootstrap/Table';
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import { FormControl } from 'react-bootstrap';
-import Form from 'react-bootstrap/Form';
-import oranGe from './ora.png';
-import axios from "axios";
 
 
 
