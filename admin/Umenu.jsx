@@ -19,16 +19,6 @@ function Homed() {
 //feaching item
   const[homeds,setHomeds] = useState([]);
 
-  useEffect(() =>{
-    const getHomeds =() =>{
-     axios.get("http://localhost:3001/Menuitem/").then((res) =>{
-      setHomeds(res.data);
-     }).catch((err) => {
-      alert(err.message);
-     })
-    }
-    getHomeds();
-  },[])
 
 
 
