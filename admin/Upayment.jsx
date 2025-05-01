@@ -27,7 +27,7 @@ import axios from "axios";
 
 function Homed() {
 
-  //faching detail
+  //faching 
   const[homeds,setHomeds] = useState([]);
 
   useEffect(() =>{
