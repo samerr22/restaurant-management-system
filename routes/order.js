@@ -2,26 +2,6 @@ const router = require("express").Router();
 
 
 
-// creat a new menu
-router.route("/Oadd").post((req,res)=>{
-
-    const OrderId = req.body.OrderId;
-    const description = req.body.description;
-    const CustomerName = req.body.CustomerName;
-    const item = req.body.item;
-    const TotalAmount = req.body.TotalAmount;
-    const payment = req.body.payment;
-
- 
-
-    newOrder.save().then(()=>{
-        res.json("Order added")
-
-    }).catch((err)=>{
-        console.log(err);
-    })
-
-})
 
 //get all menu
  router.route("/").get((req,res)=>{
