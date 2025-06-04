@@ -12,14 +12,7 @@ router.route("/Oadd").post((req,res)=>{
     const TotalAmount = req.body.TotalAmount;
     const payment = req.body.payment;
 
-    const newOrder = new Order({
-        OrderId,
-        description,
-        CustomerName,
-        item,
-        TotalAmount,
-        payment,
-    })
+ 
 
     newOrder.save().then(()=>{
         res.json("Order added")
