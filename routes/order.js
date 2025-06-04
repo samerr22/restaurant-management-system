@@ -3,15 +3,7 @@ const router = require("express").Router();
 
 
 
-//get all menu
- router.route("/").get((req,res)=>{
 
-    Order.find().then((order)=>{
-        res.json(order)
-    }).catch((err)=>{
-       console.log(err) 
-    })
- })
 
   
 // Update a menu item by ID ans use same another methord(D strakcher use)
