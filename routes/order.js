@@ -9,16 +9,6 @@ const router = require("express").Router();
 // Update a menu item by ID ans use same another methord(D strakcher use)
  //asinkawait function use
 
-
-    const update = await Order.findByIdAndUpdate(userId, updateOrder)
-    .then(()=>{
-        res.status(200).send({satatus: "User updated"})
-    }).catch((err) => {
-        console.log(err);
-        res.status(500).send({satatus: "Error with updating data"});
-    })
-
-    
 })
 
 //http//localhost:8070/menuitem/delete/45dfldfldfg45fg
