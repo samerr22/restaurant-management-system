@@ -11,19 +11,7 @@ const router = require("express").Router();
 
 })
 
-//http//localhost:8070/menuitem/delete/45dfldfldfg45fg
-// Delete a menu item by ID
-router.route("/delete/:id").delete(async(req, res) => {
-    let userId = req.params.id;
 
-    await Order.findByIdAndDelete(userId)
-    .then(() => {
-        res.status(200).send({status: "User deleted"})
-    }).catch((err) => {
-        console.log(err.message);
-        res.status(500).send({status: "Error with delete user", error: err.message});
-    })
-})
 
 // Get a specific menu item by ID
 router.route("/get/:id").get(async (req, res) =>{
