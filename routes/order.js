@@ -8,23 +8,7 @@ const router = require("express").Router();
   
 // Update a menu item by ID ans use same another methord(D strakcher use)
  //asinkawait function use
-router.route("/update/:id").put(async(req, res) => {
-    let userId = req.params.id;
-    const {OrderId,
-        description,
-        CustomerName,
-        item,
-        TotalAmount,
-        payment} = req.body;
 
-    const updateOrder = {
-        OrderId,
-        description,
-        CustomerName,
-        item,
-        TotalAmount,
-        payment
-    }
 
     const update = await Order.findByIdAndUpdate(userId, updateOrder)
     .then(()=>{
