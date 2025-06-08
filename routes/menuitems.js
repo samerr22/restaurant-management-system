@@ -4,15 +4,6 @@ let MenuItem = require("../models/MenuItem");
 
 
 
-//get all menu
- router.route("/").get((req,res)=>{
-
-    MenuItem.find().then((menuitems)=>{
-        res.json(menuitems)
-    }).catch((err)=>{
-       console.log(err) 
-    })
- })
 
   
 // Update a menu item by ID ans use same another methord(D strakcher use)
