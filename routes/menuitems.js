@@ -2,29 +2,7 @@ const router = require("express").Router();
 let MenuItem = require("../models/MenuItem"); 
 
 
-// creat a new menu
-router.route("/Madd").post((req,res)=>{
 
-    const name = req.body.name;
-    const description = req.body.description;
-    const price = req.body.price;
-    
-
-    const newMenuItem = new MenuItem({
-        name,
-        description,
-        price,
-        
-    })
-
-    newMenuItem.save().then(()=>{
-        res.json("MenuItem added")
-
-    }).catch((err)=>{
-        console.log(err);
-    })
-
-})
 
 //get all menu
  router.route("/").get((req,res)=>{
