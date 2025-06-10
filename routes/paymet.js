@@ -3,28 +3,7 @@ let Paymet = require("../models/Paymet");
 
 
 // creat a new menu
-router.route("/Padd").post((req,res)=>{
 
-    const name = req.body.name;
-    const type = req.body.type;
-    const description = req.body.description;
-    
-
-    const newPaymet = new Paymet({
-        name,
-        type,
-        description,
-        
-    })
-
-    newPaymet.save().then(()=>{
-        res.json("Paymet added")
-
-    }).catch((err)=>{
-        console.log(err);
-    })
-
-})
 
 //get all menu
  router.route("/").get((req,res)=>{
