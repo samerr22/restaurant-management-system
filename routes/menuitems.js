@@ -5,33 +5,8 @@ let MenuItem = require("../models/MenuItem");
 
 
 
-  
-// Update a menu item by ID ans use same another methord(D strakcher use)
- //asinkawait function use
-router.route("/update/:id").put(async(req, res) => {
-    let userId = req.params.id;
-    const {name,
-        description,
-        price,
-         } = req.body;
 
-    const updateMenuItem = {
-        name,
-        description,
-        price,
-        
-    }
 
-    const update = await MenuItem.findByIdAndUpdate(userId, updateMenuItem)
-    .then(()=>{
-        res.status(200).send({satatus: "User updated"})
-    }).catch((err) => {
-        console.log(err);
-        res.status(500).send({satatus: "Error with updating data"});
-    })
-
-    
-})
 
 //http//localhost:8070/menuitem/delete/45dfldfldfg45fg
 // Delete a menu item by ID
