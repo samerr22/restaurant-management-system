@@ -5,15 +5,6 @@ let Paymet = require("../models/Paymet");
 // creat a new menu
 
 
-//get all menu
- router.route("/").get((req,res)=>{
-
-    Paymet.find().then((paymet)=>{
-        res.json(paymet)
-    }).catch((err)=>{
-       console.log(err) 
-    })
- })
 
   
 // Update a menu item by ID ans use same another methord(D strakcher use)
