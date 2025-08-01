@@ -24,17 +24,7 @@ function App() {
   return (
     
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Homed/>}></Route>
-      <Route path="/add" element={<Table/>}></Route>
-      <Route path="/Oadd" element={<Order/>}></Route>
-      <Route path="/Padd" element={<Payment/>}></Route>
-      <Route path="/Um" element={<Umenu/>}></Route>
-      <Route path="/Utbl" element={<Utable/>}></Route>
-      <Route path="/Upay" element={<Upayment/>}></Route>
-      
-    </Routes>
-    </BrowserRouter>
+   
 
     
 
