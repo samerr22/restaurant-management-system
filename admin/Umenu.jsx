@@ -14,11 +14,6 @@ import Button from 'react-bootstrap/Button';
 function Homed() {
 
 
-
-
-
-  const [selectedItemId, setSelectedItemId] = useState("");
-  const [selectedItemName, setSelectedItemName] = useState("");
   const [selectedItemDescription, setSelectedItemDescription] = useState("");
   const [selectedItemPrice, setSelectedItemPrice] = useState("");
   
@@ -442,4 +437,5 @@ function Homed() {
 
 
 export default Homed;
+
 
