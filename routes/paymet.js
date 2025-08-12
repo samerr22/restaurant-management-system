@@ -7,30 +7,7 @@ let Paymet = require("../models/Paymet");
 
 
   
-// Update a menu item by ID ans use same another methord(D strakcher use)
- //asinkawait function use
-router.route("/update/:id").put(async(req, res) => {
-    let userId = req.params.id;
-    const {name,
-        type,
-        description,} = req.body;
 
-    const updatePaymet = {
-        name,
-        type,
-        description,
-    }
-
-    const update = await Paymet.findByIdAndUpdate(userId, updatePaymet)
-    .then(()=>{
-        res.status(200).send({satatus: "Paymet updated"})
-    }).catch((err) => {
-        console.log(err);
-        res.status(500).send({satatus: "Error with updating data"});
-    })
-
-    
-})
 
 //http//localhost:8070/menuitem/delete/45dfldfldfg45fg
 // Delete a menu item by ID
@@ -61,3 +38,4 @@ router.route("/get/:id").get(async (req, res) =>{
 
 
 module.exports = router;
+
