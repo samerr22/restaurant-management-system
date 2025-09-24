@@ -1,5 +1,3 @@
-const router = require("express").Router();
-let Paymet = require("../models/Paymet"); 
 
 
 
@@ -7,6 +5,7 @@ let Paymet = require("../models/Paymet");
 
 
 module.exports = router;
+
 
 
 
