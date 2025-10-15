@@ -12,13 +12,6 @@ router.route("/TTadd").post((req,res)=>{
 
     
 
-    const newTable = new Table({
-      
-        capacity,
-        number,
-        status,
-        
-    })
 
     newTable.save().then(()=>{
         res.json("Table added")
@@ -90,6 +83,7 @@ router.route("/get/:id").get(async (req, res) =>{
         res.status(500).send({status: "error with", error: err.message})
     })
 })
+
 
 
 
