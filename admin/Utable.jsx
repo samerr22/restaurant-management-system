@@ -12,9 +12,7 @@ import Row from 'react-bootstrap/Row';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { FormControl } from 'react-bootstrap';
-import Form from 'react-bootstrap/Form';
-import oranGe from './ora.png'
-import axios from "axios";
+
 
 
 
@@ -438,6 +436,7 @@ function Homed() {
     
   );
 }
+
 
 
 export default Homed;
