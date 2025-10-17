@@ -7,10 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import orderFood from './images/order-food.png';
-import User from './images/user.png';
-import oranGe from './images/orange.png'
-import saImage from './images/sa.jpg';
+
 import './dark-mode.css';
 import { Link } from 'react-router-dom';
 
@@ -94,3 +91,4 @@ function Header(){
 
 }
 export default Header;
+
