@@ -8,18 +8,11 @@ const menuitemSchema = new Schema({
             type: String,
             required: true,
         },
-        description: {
-            type: String,
-            required: true, // This field is required
-          },
-          price: {
-            type: Number,
-            required: true, // This field is required
-          },
-     
+      
 
 })
 
 const MenuItem = mongoose.model("Menuitem",menuitemSchema);
 
 module.exports = MenuItem;
+
